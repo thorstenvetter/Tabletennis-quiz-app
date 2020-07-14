@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="tabletennis_quiz">Tabletennis Quiz</string>
+    <string name="question_one">How many points are needed to win a set in case a set is won before both players have 10 points?</string>
+    <string name="number_of_points">Number of points</string>
+    <string name="question_two">What happens if your serve touches the net before the opponents side?</string>
+    <string name="you_get_a_point">You get a point</string>
+    <string name="the_enemy_player_gets_a_point">The enemy player gets a point</string>
+    <string name="the_serve_will_be_repeated">The serve will be repeated</string>
+    <string name="question_three">What are the usual colors of table tennis rubbers?</string>
+    <string name="number_of_sets">Number of sets</string>
+    <string name="question_four">How many sets are usually needed to win a game?</string>
+    <string name="question_five">Do doubles exist in tabletennis?</string>
+    <string name="brown">brown</string>
+    <string name="black">black</string>
+    <string name="red">red</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="results">Results</string>
+</resources>

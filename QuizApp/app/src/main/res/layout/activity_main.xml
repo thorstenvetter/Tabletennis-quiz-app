@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/standarddimen"
+        android:layout_marginStart="@dimen/standarddimen"
+        android:layout_marginEnd="@dimen/standarddimen">
+
+        <TextView
+            android:id="@+id/tabletennis_quiz_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            style="@style/HeaderText"
+            android:text="@string/tabletennis_quiz"
+            />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/headerdimen"
+            style="@style/QuestionText"
+            android:text="@string/question_one"/>
+
+        <EditText
+            android:id="@+id/number_of_points_edit_text"
+            style="@style/StandardText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/halfdimen"
+            android:hint="@string/number_of_points"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standarddimen"
+            style="@style/QuestionText"
+            android:text="@string/question_two"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/you_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/halfdimen"
+                style="@style/StandardText"
+                android:text="@string/you_get_a_point"
+                android:onClick="onQuestionTwoRadioButtonClicked"/>
+            <RadioButton android:id="@+id/enemy_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/halfdimen"
+                style="@style/StandardText"
+                android:text="@string/the_enemy_player_gets_a_point"
+                android:onClick="onQuestionTwoRadioButtonClicked"/>
+            <RadioButton android:id="@+id/repeat_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/halfdimen"
+                style="@style/StandardText"
+                android:text="@string/the_serve_will_be_repeated"
+                android:onClick="onQuestionTwoRadioButtonClicked" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standarddimen"
+            style="@style/QuestionText"
+            android:text="@string/question_three"/>
+
+        <CheckBox android:id="@+id/red_rubber_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/halfdimen"
+            style="@style/StandardText"
+            android:text="@string/red"
+            android:onClick="rubberCheck"/>
+
+        <CheckBox android:id="@+id/black_rubber_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standarddimen"
+            style="@style/StandardText"
+            android:text="@string/black"
+            android:onClick="rubberCheck"/>
+
+        <CheckBox android:id="@+id/brown_rubber_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/halfdimen"
+            style="@style/StandardText"
+            android:text="@string/brown"
+            android:onClick="rubberCheck"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standarddimen"
+            style="@style/QuestionText"
+            android:text="@string/question_four"/>
+
+        <EditText
+            android:id="@+id/number_of_sets_edit_text"
+            style="@style/StandardText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/halfdimen"
+            android:hint="@string/number_of_sets"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standarddimen"
+            style="@style/QuestionText"
+            android:text="@string/question_five"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/yes_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/halfdimen"
+                style="@style/StandardText"
+                android:text="@string/yes"
+                android:onClick="onQuestionFiveRadioButtonClicked"/>
+
+            <RadioButton android:id="@+id/no_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/halfdimen"
+                style="@style/StandardText"
+                android:text="@string/no"
+                android:onClick="onQuestionFiveRadioButtonClicked" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standarddimen"
+            android:layout_marginBottom="@dimen/headerdimen"
+            android:layout_gravity="center_horizontal"
+            style="@style/QuestionText"
+            android:text="@string/results"
+            android:onClick="calculateResults" />
+
+    </LinearLayout>
+    
+</ScrollView>
